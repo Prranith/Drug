@@ -23,7 +23,7 @@ const VerifyOtpPage = () => {
     if (otp) {
       try {
         const response = await axios.post(
-          'https://rehab-df-described-jason.trycloudflare.com/api/auth/verify-otp',
+          'https://5e69-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/auth/verify-otp',
           { email, otp, username, password },
           { withCredentials: true }
         );
