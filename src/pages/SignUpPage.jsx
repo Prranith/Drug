@@ -15,7 +15,7 @@ const SignupPage = () => {
     if (username && email && password) {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/auth/register/send-otp',
+          'https://rehab-df-described-jason.trycloudflare.com/api/auth/register/send-otp',
           { username, email },
           { withCredentials: true }
         );
