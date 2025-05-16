@@ -26,7 +26,7 @@ const OTPVerificationPage = () => {
     try {
       const storedData = JSON.parse(localStorage.getItem('signupData') || '{}');
       const response = await axios.post(
-        'https://rehab-df-described-jason.trycloudflare.com/api/auth/register/verify-otp',
+        'https://5e69-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/auth/register/verify-otp',
         { email, otp, password: storedData.password, username: storedData.username },
         { withCredentials: true }
       );
@@ -44,7 +44,7 @@ const OTPVerificationPage = () => {
 
   const handleResendOTP = async () => {
     try {
-      await axios.post('http://localhost:5000/api/auth/register/send-otp', { email });
+      await axios.post('https://5e69-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/auth/register/send-otp', { email });
       setMessage('New OTP sent to your email.');
     } catch (error) {
       setMessage('Failed to resend OTP. Try again.');
