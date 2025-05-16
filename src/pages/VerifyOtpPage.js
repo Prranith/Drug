@@ -23,7 +23,7 @@ const VerifyOtpPage = () => {
     if (otp) {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/auth/verify-otp',
+          'https://rehab-df-described-jason.trycloudflare.com/api/auth/verify-otp',
           { email, otp, username, password },
           { withCredentials: true }
         );
