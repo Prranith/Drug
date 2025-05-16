@@ -13,7 +13,7 @@ const MobileVerificationPage = () => {
 
   const handleSendOTP = async () => {
     try {
-      await axios.post('http://localhost:5000/api/auth/register/send-mobile-otp', { phoneNumber, email });
+      await axios.post('https://rehab-df-described-jason.trycloudflare.com/api/auth/register/send-mobile-otp', { phoneNumber, email });
       setMessage('OTP sent to your mobile number.');
     } catch (error) {
       setMessage('Failed to send OTP. Please try again.');
