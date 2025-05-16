@@ -26,7 +26,7 @@ const OTPVerificationPage = () => {
     try {
       const storedData = JSON.parse(localStorage.getItem('signupData') || '{}');
       const response = await axios.post(
-        'http://localhost:5000/api/auth/register/verify-otp',
+        'https://rehab-df-described-jason.trycloudflare.com/api/auth/register/verify-otp',
         { email, otp, password: storedData.password, username: storedData.username },
         { withCredentials: true }
       );
