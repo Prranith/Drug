@@ -13,7 +13,7 @@ const MobileVerificationPage = () => {
 
   const handleSendOTP = async () => {
     try {
-      await axios.post('https://rehab-df-described-jason.trycloudflare.com/api/auth/register/send-mobile-otp', { phoneNumber, email });
+      await axios.post('https://5e69-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/auth/register/send-mobile-otp', { phoneNumber, email });
       setMessage('OTP sent to your mobile number.');
     } catch (error) {
       setMessage('Failed to send OTP. Please try again.');
@@ -22,7 +22,7 @@ const MobileVerificationPage = () => {
 
   const handleVerifyOTP = async () => {
     try {
-      const response = await axios.post('https://rehab-df-described-jason.trycloudflare.com/api/auth/register/verify-mobile-otp', { phoneNumber, otp, email });
+      const response = await axios.post('https://5e69-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/auth/register/verify-mobile-otp', { phoneNumber, otp, email });
       if (response.status === 201) {
         setMessage('Mobile verification successful! Redirecting to login...');
         setTimeout(() => navigate('/login'), 2000);
