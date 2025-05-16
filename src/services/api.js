@@ -82,7 +82,7 @@
 import axios from 'axios';
 
 // Base URL for your server
-const BASE_URL = 'http://localhost:5000/api'; // Adjust if your upload endpoint is different
+const BASE_URL = 'https://rehab-df-described-jason.trycloudflare.com/api'; // Adjust if your upload endpoint is different
 
 // Upload function for generic image files (like for model-related uploads)
 export const uploadImage = async (imageFile, modelType, onUploadProgress) => {
