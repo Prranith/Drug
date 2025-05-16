@@ -49,7 +49,7 @@ const LogP = () => {
     }
     try {
       setError(null);
-      const response = await axios.post("http://localhost:5000/api/reinforcement/logp", {
+      const response = await axios.post("https://rehab-df-described-jason.trycloudflare.com/api/reinforcement/logp", {
         state: currentInput,
       });
       console.log(response.data);
