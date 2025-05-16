@@ -141,7 +141,7 @@ const Chembert = () => {
 
     try {
       const res = await axios.post(
-        'http://localhost:5000/api/mask',
+        'https://4c2b-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/mask',
         { state: smiles },
         { headers: { 'Content-Type': 'application/json' } }
       );
@@ -162,7 +162,7 @@ const Chembert = () => {
       const errorMessage =
         err.response?.data?.message ||
         err.message ||
-        'Prediction failed. Please check if the server is running at http://localhost:5000/api/mask';
+        'Prediction failed. Please check if the server is running at https://4c2b-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/mask';
       setError(errorMessage);
       console.error('Prediction error:', err);
     } finally {
