@@ -141,7 +141,7 @@ const Chembert = () => {
 
     try {
       const res = await axios.post(
-        'https://4c2b-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/mask',
+        'https://4bee-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/api/mask',
         { state: smiles },
         { headers: { 'Content-Type': 'application/json' } }
       );
