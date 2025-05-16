@@ -22,7 +22,7 @@ const MobileVerificationPage = () => {
 
   const handleVerifyOTP = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register/verify-mobile-otp', { phoneNumber, otp, email });
+      const response = await axios.post('https://rehab-df-described-jason.trycloudflare.com/api/auth/register/verify-mobile-otp', { phoneNumber, otp, email });
       if (response.status === 201) {
         setMessage('Mobile verification successful! Redirecting to login...');
         setTimeout(() => navigate('/login'), 2000);
