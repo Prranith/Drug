@@ -109,7 +109,7 @@ function DockingForm() {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), 3000000);
 
-      const response = await fetch('http://localhost:8000/predict/docking', {
+      const response = await fetch('https://4bee-2401-4900-4fe7-3cc7-1594-65c6-8521-d5d4.ngrok-free.app/predict/docking', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
